@@ -72,7 +72,7 @@
           axios.post('https://cb.lk/api/v1/shorten', {
             url: window.location.href,
             code: '',
-            secret: ''
+            secret: 'cb@111'
           }).then((response) => {
             this.longURL = window.location.href;
             this.shortURL = 'https://cb.lk/' + response.data.shortcode;
